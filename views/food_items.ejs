@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khana Khazana</title>
+    <link rel="stylesheet" text="text/css" href="\css\food_items.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script>
+        function Price(){
+            var count=0;
+	        if(document.getElementById('manch').checked) {
+		        count=count+150;
+	        }
+            if(document.getElementById('fri').checked) {
+		        count=count+140;
+	        }
+            if(document.getElementById('cor').checked) {
+		        count=count+90;
+	        }
+            if(document.getElementById('chee').checked) {
+		        count=count+90;
+	        }
+            if(document.getElementById('pav').checked) {
+		        count=count+70;
+	        }
+            if(document.getElementById('masa').checked) {
+		        count=count+130;
+	        }
+            if(document.getElementById('pane').checked) {
+		        count=count+160;
+	        }
+            if(document.getElementById('makh').checked) {
+		        count=count+150;
+	        }
+            if(document.getElementById('mugh').checked) {
+		        count=count+140;
+	        }
+            if(document.getElementById('kada').checked) {
+		        count=count+170;
+	        }
+	        if(document.getElementById('shah').checked) {
+		        count=count+190;
+	        }
+            if(document.getElementById('mala').checked) {
+		        count=count+180;
+	        }
+            if(document.getElementById('aloo').checked) {
+		        count=count+110;
+	        }
+            if(document.getElementById('roti').checked) {
+		        count=count+15;
+	        }
+            if(document.getElementById('naan').checked) {
+		        count=count+40;
+	        }
+	        alert("Total Price = " + count);
+        }
+        </script>
+</head>
+<body>
+    <header class="topnav">
+        <h3>Khana Khazana</h3>
+        <a class="home" href="/">Home</a>
+        <a class="order" href="/userdetail">Order Now</a>
+    </header>
+    <main>
+        <form method="POST" action="/index">
+            <section>
+                <h2 class="rest"><b>Choose restaurant:</b></h2>
+                <select name="restaurant">
+                    <option value="select">--Select--</option>
+                    <option value="Hotel Ashoka">Hotel Ashoka</option>
+                    <option value="Metro Resort">Metro Resort</option>
+                    <option value="Hotel Varun">Hotel Varun</option>
+                    <option value="Rajputana Divine">Rajputana Divine</option>
+                    <option value="Hotel Vedantam">Hotel Vedantam</option>
+                    <option value="Hotel SamarSingha's">Hotel SamarSingha's</option>
+                </select>
+            </section>
+            <section>
+                <h2 class="foo"><b>Choose food:</b></h2><br>
+                <div style="display: inline-flex;">
+                <input type="checkbox" id="manch" name="man" value="Veg. Manchuraian">
+                <label for="manch" class="manc">Veg. Manchuraian</label>
+                <input type="checkbox" id="fri" name="fried" value="Veg. Fried Rice">
+                <label for="fri" class="fr">Veg. Fried Rice</label>
+                <input type="checkbox" id="cor" name="corn" value="Corn Pizza">
+                <label for="cor" class="co">Corn Pizza</label>
+                </div><br>
+                <div style="display: inline-flex;">
+                <input type="checkbox" id="chee" name="cheese" value="Cheese Pizza">
+                <label for="chee" class="che">Cheese Pizza</label>
+                <input type="checkbox" id="pav" name="bhaji" value="Pav Bhaji">
+                <label for="pav" class="pa">Pav Bhaji</label>
+                <input type="checkbox" id="masa" name="masala" value="Masala Dosa">
+                <label for="masa" class="mas">Masala Dosa</label>
+                </div><br>
+                </div style="display: inline-flex;">
+                <input type="checkbox" id="pane" name="paneer" value="Paneer Dosa">
+                <label for="pane" class="pan">Paneer Dosa</label>
+                <input type="checkbox" id="makh" name="makhani" value="Dal Makhani">
+                <label for="makh" class="mak">Dal Makhani</label>
+                <input type="checkbox" id="mugh" name="mughlai" value="Dal Mughlai">
+                <label for="mugh" class="mug">Dal Mughlai</label>
+                </div><br>
+                <div style="display: inline-flex;">
+                <input type="checkbox" id="kada" name="kadai" value="Kadai Paneer">
+                <label for="kada" class="kad">Kadai Paneer</label>
+                <input type="checkbox" id="shah" name="shahi" value="Shahi Paneer">
+                <label for="shah" class="sha">Shahi Paneer</label>
+                <input type="checkbox" id="mala" name="malai" value="Malai Kofta">
+                <label for="mala" class="mal">Malai Kofta</label>
+                </div><br>
+                <div style="display: inline-flex;">
+                <input type="checkbox" id="aloo" name="gobhi" value="Aloo Gobhi">
+                <label for="aloo" class="alo">Aloo Gobhi</label>
+                <input type="checkbox" id="roti" name="tanroti" value="Tandoori Roti">
+                <label for="roti" class="rot">Tandoori Roti</label>
+                <input type="checkbox" id="naan" name="tannaan" value="Tandoori Butter Naan">
+                <label for="naan" class="naa">Tandoori Butter Naan</label>
+                </div>
+            </section>
+            <input type="submit" value="Order" name="order" class="ord">
+        </form>
+        <button value="Check Price" class="price" onclick="Price()">Check Price</button>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <h1 class="contact">Contact Us</h1>
+        <br>
+        <div>
+            <p class="para1">Email:-&nbsp;<a href="mailto:khanaKhazana23@gmail.com">khanaKhazana23@gmail.com</a></p><br>
+            <p class="para1">Phone:-&nbsp;<a href="tel:9899463165">+919899463165</a></p></div>
+            <br>
+    </footer>
+</body>
+</html>

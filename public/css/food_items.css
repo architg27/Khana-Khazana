@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    background-image: url("/images/pic2.jpg");
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgb(228, 10, 10);
+}
+.topnav h3{
+  color: rgb(255, 255, 255);
+  padding-left:25px;
+  font-family: serif;
+}
+.topnav a {
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+.home{
+  left:1130px;
+  top:15px;
+}
+.order{
+  left:1230px;
+  top:15px;
+}
+.rest{
+  position: absolute;
+  left:50px;
+  font-size: 40px;
+}
+select{
+  position: absolute;
+  left:450px;
+  top:90px;
+}
+.foo{
+  position: absolute;
+  left:50px;
+  top:150px;
+  font-size: 40px;
+}
+#manch{
+  position: absolute;
+  top:190px;
+  left:450px;
+}
+.manc{
+  position: absolute;
+  top:185px;
+  left:470px;
+}
+#fri{
+  position: absolute;
+  top:190px;
+  left:750px;
+}
+.fr{
+  position: absolute;
+  top:185px;
+  left:770px;
+}
+#cor{
+  position: absolute;
+  top:190px;
+  left:1050px;
+}
+.co{
+  position: absolute;
+  top:185px;
+  left:1070px;
+}
+#chee{
+  position: absolute;
+  top:240px;
+  left:450px;
+}
+.che{
+  position: absolute;
+  top:235px;
+  left:470px;
+}
+#pav{
+  position: absolute;
+  top:240px;
+  left:750px;
+}
+.pa{
+  position: absolute;
+  top:235px;
+  left:770px;
+}
+#masa{
+  position: absolute;
+  top:240px;
+  left:1050px;
+}
+.mas{
+  position: absolute;
+  top:235px;
+  left:1070px;
+}
+#pane{
+  position: absolute;
+  top:290px;
+  left:450px;
+}
+.pan{
+  position: absolute;
+  top:285px;
+  left:470px;
+}
+#makh{
+  position: absolute;
+  top:290px;
+  left:750px;
+}
+.mak{
+  position: absolute;
+  top:285px;
+  left:770px;
+}
+#mugh{
+  position: absolute;
+  top:290px;
+  left:1050px;
+}
+.mug{
+  position: absolute;
+  top:285px;
+  left:1070px;
+}
+#kada{
+  position: absolute;
+  top:340px;
+  left:450px;
+}
+.kad{
+  position: absolute;
+  top:335px;
+  left:470px;
+}
+#shah{
+  position: absolute;
+  top:340px;
+  left:750px;
+}
+.sha{
+  position: absolute;
+  top:335px;
+  left:770px;
+}
+#mala{
+  position: absolute;
+  top:340px;
+  left:1050px;
+}
+.mal{
+  position: absolute;
+  top:335px;
+  left:1070px;
+}
+#aloo{
+  position: absolute;
+  top:390px;
+  left:450px;
+}
+.alo{
+  position: absolute;
+  top:385px;
+  left:470px;
+}
+#roti{
+  position: absolute;
+  top:390px;
+  left:750px;
+}
+.rot{
+  position: absolute;
+  top:385px;
+  left:770px;
+}
+#naan{
+  position: absolute;
+  top:390px;
+  left:1050px;
+}
+.naa{
+  position: absolute;
+  top:385px;
+  left:1070px;
+}
+.ord{
+  position: absolute;
+  top:500px;
+  left:890px;
+  font-size: 20px;
+  text-align: center;
+  padding: 1%;
+  background-color: #ff9307;
+  color: rgb(28, 29, 28);
+  border: none;
+  font-family: sans-serif;
+  padding: 8px;
+  margin: 0 auto;
+  width:10%;
+  }
+.price{
+  position: absolute;
+  left:290px;
+  top:500px;
+  font-size: 20px;
+  text-align: center;
+  padding: 1%;
+  background-color: #fffb00;
+  color: rgb(28, 29, 28);
+  border: none;
+  font-family: sans-serif;
+  padding: 8px;
+  margin: 0 auto;
+  width:10%;
+}
+footer{
+  background-color: rgb(228, 10, 10);
+  color: rgb(255, 255, 255);
+}
+  
+  .contact{
+    padding-left:117px;
+    line-height: 1.2;
+  }
+  .para1{
+    margin-top: 0;
+    line-height: 0;
+    padding-left: 120px;
+  }
+  a{
+    text-decoration: none;
+  }

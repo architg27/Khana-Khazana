@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended: false}));
 const con = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'architg27'
+  password: 'xxxxxx'
 });
 
 con.connect(function(err) {
@@ -41,9 +41,6 @@ app.post('/create',function(req, res)  {
   no=req.body.monu;
   var addre=req.body.addr;
   var i=0;
-  console.log(name);
-  console.log(no);
-  console.log(addre); 
   con.query('INSERT INTO user(name ,no,addr,restaurant) VALUES (?,?,?,?)',
   [name,no,addre,i], function(error, results) {
     con.query('INSERT INTO food(no,manch,fried,corn,cheese,pav,masala,paneer,makh,mugh,kadai,shahi,malai,aloo,roti,naan) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
@@ -69,22 +66,6 @@ app.post('/index',function(req, res)  {
   var gobhi=req.body.gobhi;
   var tanroti=req.body.tanroti;
   var tannaan=req.body.tannaan;
-  console.log(rest);
-  console.log(man);
-  console.log(fried);
-  console.log(corn);
-  console.log(cheese);
-  console.log(bhaji);
-  console.log(masala);
-  console.log(paneer);
-  console.log(makhani);
-  console.log(mughlai);
-  console.log(kadai);
-  console.log(shahi);
-  console.log(malai);
-  console.log(gobhi);
-  console.log(tanroti);
-  console.log(tannaan);
   con.query('UPDATE user SET restaurant=? WHERE no=?',
   [rest,no] ,function(error, results) {
     con.query('UPDATE food SET manch=?,fried=?,corn=?,cheese=?,pav=?,masala=?,paneer=?,makh=?,mugh=?,kadai=?,shahi=?,malai=?,aloo=?,roti=?,naan=? WHERE no=?',
